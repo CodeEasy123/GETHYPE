@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/jpg" sizes="32x32" href="LOGO.png">
+  <link type="text/css" href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+    crossorigin="anonymous" />
+
+  <title>GET HYPE</title>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  </body>
+  <style>
+    .profile{
+        display: flex;
+        justify-content: center;
+        margin: 100px;
+        margin-left: 50px;
+        max-width: 90vw;
+        width: 100vw;
+ 
+    }
+    .title{
+        text-align: center;
+        margin: auto;
+        text-decoration: solid;
+    }
+    .title:hover{
+        cursor: pointer;
+    }
+    .cart{
+        text-align: center;
+        margin-right: 100px;
+
+    }
+    .cart:hover{
+        cursor: pointer;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        margin-left: 50px;
+    }
+    img:hover{
+        cursor: pointer;
+    }
+    .cover{
+        background-size: cover;
+        min-height: 60vh;
+        position: relative;
+        margin-top: 50px;
+        width: 90%;
+        margin-left: 95px;
+    }
+    .profileContainer{
+      margin-top: 50PX;
+      display: grid;
+    }
+    form{
+      margin-top: 50PX;
+      display: flex;
+      position: relative;
+      margin-left: 20px;
+      text-align: center;
+    }
+    .btn{
+      text-align: center;
+      font-size: 50;
+    }
+
+  </style>
+</head>
+
+<nav>
+    <button class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-ul" id="nav-ul">
+      <li><a class="active" id="x" href="index.html">HOME</a></li>
+      <li><a data-scroll href="favourite.html">FAVOURITE</a></li>
+      <li><a data-scroll href="articles.html">ARTICLES</a></li>
+      <li><a data-scroll href="">PROFILE</a></li>
+      <li><a data-scroll href="Contactus.html">REACH US</a></li>
+      <li><a data-scroll href="#about">SEARCH</a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+        </svg>
+    </li>
+    </ul>
+</nav>
+    <section class="panel-grid">
+        <section>
+          <p>LET'S CONNECT</p>
+        </section>
+        <section>
+          <i class="fas fa-minus"></i>
+        </section>
+        <section>
+          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+        </section>
+        <section>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </section>
+        <section>
+          <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        </section>
+    </section>
+<div class="Profile">
+    <header class="icon">
+        <img src="LOGO.png" class="img">
+        <div class="title"> MY PROFILE </div>
+        <div class="icon-cart span">    
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+            </svg>
+         </div>
+    </header>
+</div>
+<body>
+<div class="cover" 
+     style="background-image: url('Coverimg.png');">
+    <div class="color-overlay d-flex justify-content-center align-items-center">
+    </div>
+</div>
+<div class="profileContainer">
+  <form class="form">
+    <label for="fullname">
+      <span> FIRST NAME : </span>
+      <input type="text" id="fullname" for="fullname" placeholder=" Enter Full Name" />
+    </label>
+    <label for="SurName">
+      <span> LAST NAME : </span>
+      <input type="text" id="SurName" for="SurName" placeholder=" Enter Last Name" />
+    </label>
+    <label for="message" class="message">
+      <span> LEAVE A MESSAGE : </span>
+      <textarea id="message" for="message" placeholder="HOW'S YOUR EXPREIENCE"></textarea>
+    </label>
+    <label for="number">
+      <span> CONTACT : </span>
+      <input type="text" id="number" for="number" placeholder=" Enter a Number" />
+    </label>
+    <label for="email">
+      <span> EMAIL : </span>
+      <input type="email" id="email" for="email" placeholder=" Enter an E-mail" />
+    </label>
+    <label for="submit" class="btn">
+    <input type="Submit" name="" value="SEND">
+  </label>
+</div>
+</body>
